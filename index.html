@@ -443,6 +443,8 @@ footer{ background:var(--bg-secondary); border-top:1px solid var(--border); padd
 /* ---------- Print ---------- */
 @media print{ header,#fab-help,#back-top,#a11y-panel,.ticker-bar,footer,#scroll-progress{ display:none !important; } }
 </style>
+
+<!-- Adsterra Social Bar / Popunder Script -->
 <script src="https://pl30834270.effectivecpmnetwork.com/1f/f4/c8/1ff4c8d028d5ffac45576abaf98ca74b.js"></script>
 </head>
 <body data-theme="dark">
@@ -473,6 +475,20 @@ footer{ background:var(--bg-secondary); border-top:1px solid var(--border); padd
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
+      <!-- 468x60 Banner Ad Integrated Nicely -->
+      <div style="display:inline-block; overflow:hidden; border-radius:8px; max-width:468px; flex-shrink:0;">
+        <script>
+          atOptions = {
+            'key' : '658d766bbae336693b6e4f17b179e4ba',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/658d766bbae336693b6e4f17b179e4ba/invoke.js"></script>
+      </div>
+
       <button class="search-trigger" id="open-search" aria-label="Open search"><i class="fa-solid fa-magnifying-glass"></i><span class="st-label">Search resources…</span><kbd>Ctrl K</kbd></button>
       <button class="btn-icon" id="theme-toggle" aria-label="Toggle dark or light theme"><i class="fa-solid fa-moon"></i></button>
       <button class="btn-icon" id="a11y-toggle" aria-label="Accessibility settings"><i class="fa-solid fa-universal-access"></i></button>
@@ -880,6 +896,21 @@ footer{ background:var(--bg-secondary); border-top:1px solid var(--border); padd
       <div><h5>Tools</h5><ul><li><a href="#tools">Calculators</a></li><li><a href="#planner">Backpack Planner</a></li><li><a href="#dashboard">Dashboard</a></li><li><a href="#learn">Learning Center</a></li></ul></div>
       <div><h5>Support</h5><ul><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li><li><a href="#about">About</a></li><li><a href="#shelters">Shelters</a></li></ul></div>
     </div>
+
+    <!-- 320x50 Banner Ad Integrated Nicely in Footer -->
+    <div style="text-align: center; margin: 30px 0 20px 0; overflow: hidden;">
+      <script>
+        atOptions = {
+          'key' : 'c5cc4b7b8bf35fb71e3ed8a641b72d4b',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highperformanceformat.com/c5cc4b7b8bf35fb71e3ed8a641b72d4b/invoke.js"></script>
+    </div>
+
     <div class="footer-bottom">
       <span>© <span id="year"></span> Disaster Resource Finder. Built for demonstration purposes.</span>
       <span>Not a substitute for official emergency services. Always call your local emergency number first.</span>
@@ -1205,7 +1236,7 @@ window.addEventListener('scroll', ()=>{
 <script>
 /* ---------------- QUICK ACTIONS ---------------- */
 const QUICK_ACTIONS = [
- {t:'Call Emergency',d:'Dial your local emergency number now.',icon:'fa-phone',cls:'qa-danger',action:()=>{ window.location.href='tel:911'; }},
+ {t:'Call Emergency',d:'Dial your local emergency number now.',icon:'fa-phone',cls:'qa-danger',action:()=>window.location.href='tel:911'},
  {t:'First Aid',d:'Jump to step-by-step first aid guides.',icon:'fa-kit-medical',cls:'qa-success',action:()=>scrollToId('firstaid')},
  {t:'Nearby Shelters',d:'Search shelters open right now.',icon:'fa-house-chimney',cls:'qa-accent',action:()=>scrollToId('shelters')},
  {t:'Flood Safety',d:'Open the flood disaster guide.',icon:'fa-water',cls:'qa-accent',action:()=>openDisasterModal('flood')},
